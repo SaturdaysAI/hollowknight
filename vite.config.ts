@@ -2,11 +2,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig(({ mode }) => {
-  const isProd = mode === "production"; // build/preview
+  const isProd = mode === "production";
   return {
     plugins: [react()],
     base: isProd ? "/hollowknight/" : "/",
     build: { outDir: "dist" },
-    preview: { open: "/hollowknight/" },
   };
 });

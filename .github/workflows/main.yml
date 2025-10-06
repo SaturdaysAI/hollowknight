@@ -19,15 +19,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "npm"
-      # Usa 'npm install' en lugar de 'npm ci' por si no tienes package-lock.json
+
+      # Instala deps (install en vez de ci por si no hay package-lock)
       - run: npm install
+
+      # Build del proyecto
       - run: npm run build
-      # Fallback SPA para react-router (evita 404 al refrescar subrutas)
+
+      # Fallback SPA (react-router) para evitar 404 al refrescar rutas
       - run: cp dist/index.html dist/404.html
+
+      # Configura Pages y sube el artefacto
+      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist

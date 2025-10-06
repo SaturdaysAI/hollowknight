@@ -23,9 +23,10 @@ jobs:
         with:
           node-version: 20
           cache: "npm"
-      - run: npm ci
+      # Usamos 'npm install' por si no hay package-lock.json
+      - run: npm install
       - run: npm run build
-      # SPA fallback: evita 404 al refrescar rutas de react-router
+      # React Router fallback para evitar 404 al refrescar subrutas
       - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:

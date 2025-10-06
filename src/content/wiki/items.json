@@ -1,0 +1,30 @@
+[
+  { "slug": "simple-key", "title": "Simple Key", "group": "keys", "summary": "A plain iron key.", "effect": "Opens certain locked doors and grates around Hallownest." },
+  { "slug": "elegant-key", "title": "Elegant Key", "group": "keys", "summary": "An ornate city key.", "effect": "Unlocks a sealed chamber in the City of Tears." },
+  { "slug": "love-key", "title": "Love Key", "group": "keys", "summary": "Decorated with heart motifs.", "effect": "Opens a love-themed chamber deep in the Gardens." },
+  { "slug": "shopkeepers-key", "title": "Shopkeeper's Key", "group": "keys", "summary": "Lost property of a merchant.", "effect": "Returns more stock to a certain shop when delivered." },
+  { "slug": "city-crest", "title": "City Crest", "group": "keys", "summary": "A seal bearing the City’s mark.", "effect": "Can be placed to open a gate into the City of Tears." },
+  { "slug": "kings-brand", "title": "King's Brand", "group": "keys", "summary": "A scorched sigil of authority.", "effect": "Grants royal permission—opens the way to the Abyss." },
+
+  { "slug": "tram-pass", "title": "Tram Pass", "group": "exploration", "summary": "A stamped travel card.", "effect": "Activates trams that connect distant regions." },
+  { "slug": "lumafly-lantern", "title": "Lumafly Lantern", "group": "exploration", "summary": "A cluster of captive lumaflies.", "effect": "Illuminates dark caverns and rooms." },
+  { "slug": "map-and-quill", "title": "Map and Quill", "group": "exploration", "summary": "Cartographer’s basics.", "effect": "Allows updating the map at benches and buying regional maps." },
+  { "slug": "collectors-map", "title": "Collector's Map", "group": "exploration", "summary": "A peculiar chart of jars.", "effect": "Marks Grub locations on the map." },
+  { "slug": "hunters-journal", "title": "Hunter's Journal", "group": "exploration", "summary": "A bestiary in progress.", "effect": "Records entries for defeated creatures and bosses." },
+  { "slug": "hunters-mark", "title": "Hunter's Mark", "group": "exploration", "summary": "A token of the Hunt.", "effect": "Marks completion of the Journal with the Hunter’s approval." },
+  { "slug": "delicate-flower", "title": "Delicate Flower", "group": "exploration", "summary": "A fragile white bloom.", "effect": "Can be delivered intact for a special reward; breaks on damage or stag use." },
+  { "slug": "ruined-flower", "title": "Ruined Flower", "group": "exploration", "summary": "A flower gone to dust.", "effect": "A broken form of the Delicate Flower—no longer accepted." },
+  { "slug": "godtuner", "title": "Godtuner", "group": "exploration", "summary": "A resonant device.", "effect": "Tracks attunement to gods and grants access to pantheons." },
+  { "slug": "dream-nail", "title": "Dream Nail", "group": "exploration", "summary": "A blade of thought.", "effect": "Cuts into dreams, collects Essence and reveals hidden thoughts." },
+
+  { "slug": "mask-shard", "title": "Mask Shard", "group": "upgrades", "summary": "A fragment of vitality.", "effect": "Combine four to forge a new mask of health." },
+  { "slug": "vessel-fragment", "title": "Vessel Fragment", "group": "upgrades", "summary": "A shard of spirit vessel.", "effect": "Combine three to expand the SOUL vessel." },
+  { "slug": "salubras-blessing", "title": "Salubra's Blessing", "group": "upgrades", "summary": "A charm-maker’s benediction.", "effect": "Bestows a comfort when resting at benches after earning her favor." },
+
+  { "slug": "pale-ore", "title": "Pale Ore", "group": "tradables", "summary": "Metal of ancient quality.", "effect": "Used by the Nailsmith to upgrade the Nail." },
+  { "slug": "rancid-egg", "title": "Rancid Egg", "group": "tradables", "summary": "Smells strongly…", "effect": "Can be traded to recover lost shade under certain conditions." },
+  { "slug": "wanderers-journal", "title": "Wanderer's Journal", "group": "tradables", "summary": "Notes from a traveler.", "effect": "Valuable to collectors—sell for Geo." },
+  { "slug": "hallownest-seal", "title": "Hallownest Seal", "group": "tradables", "summary": "An official insignia.", "effect": "Valuable to collectors—sell for Geo." },
+  { "slug": "kings-idol", "title": "King's Idol", "group": "tradables", "summary": "A statue of the King.", "effect": "Valuable to collectors—sell for Geo." },
+  { "slug": "arcane-egg", "title": "Arcane Egg", "group": "tradables", "summary": "A relic steeped in void.", "effect": "Highly prized by scholars—sell for a high price." }
+]

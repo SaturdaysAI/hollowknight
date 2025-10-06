@@ -1,0 +1,11 @@
+[
+  {
+    "id": "q001",
+    "question": "¿Qué es Steel Soul Mode?",
+    "options": ["Modo sin mapa", "Permadeath", "Doble daño", "Solo jefes"],
+    "answerIndex": 1,
+    "tags": ["Special Modes"],
+    "difficulty": "normal",
+    "explanation": "Steel Soul elimina los reintentos."
+  }
+]

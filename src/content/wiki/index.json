@@ -1,0 +1,31 @@
+{
+  "sections": [
+    {
+      "id": "areas",
+      "title": "Areas",
+      "items": [
+        { "slug": "greenpath", "title": "Greenpath", "summary": "Lush caverns, acid pools, Mosskin enemies.", "tags": ["area"] },
+        { "slug": "city-of-tears", "title": "City of Tears", "summary": "Rainy hub with vendors and benches.", "tags": ["area"] },
+        { "slug": "crystal-peak", "title": "Crystal Peak", "summary": "Conveyors, lasers, and mining bugs.", "tags": ["area"] }
+      ]
+    },
+    {
+      "id": "bosses",
+      "title": "Bosses",
+      "items": [
+        { "slug": "hornet", "title": "Hornet", "summary": "Agile needle user; watch parries.", "tags": ["boss"] },
+        { "slug": "soul-master", "title": "Soul Master", "summary": "Teleports and slam feints.", "tags": ["boss"] },
+        { "slug": "mantis-lords", "title": "Mantis Lords", "summary": "Patterned duel evolving to trio.", "tags": ["boss"] }
+      ]
+    },
+    {
+      "id": "charms",
+      "title": "Charms",
+      "items": [
+        { "slug": "quick-focus", "title": "Quick Focus", "summary": "Faster healing channel.", "tags": ["charm"] },
+        { "slug": "shaman-stone", "title": "Shaman Stone", "summary": "Boosts spell damage.", "tags": ["charm"] },
+        { "slug": "longnail", "title": "Longnail", "summary": "Extends nail range.", "tags": ["charm"] }
+      ]
+    }
+  ]
+}

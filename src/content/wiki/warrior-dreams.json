@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "elder-hu",
+    "title": "Elder Hu",
+    "summary": "A wandering sage who pens rings of nail that cage the foe.",
+    "difficulty": 2,
+    "overview": "Dream warrior who conjures concentric nail rings that close in and force careful spacing.",
+    "where": "Fungal Wastes — warrior’s grave in caverns between Queen’s Station and Mantis Village.",
+    "drops": ["Essence"],
+    "notes": "Stand in the ring gaps and step through with dash timing; jump over ground rings, dash through air rings."
+  },
+  {
+    "slug": "galien",
+    "title": "Galien",
+    "summary": "A brave youth; a spectral wheel sweeps while his weapon spins.",
+    "difficulty": 2,
+    "overview": "Fights with an orbiting spirit wheel while his nail spins and ricochets around the arena.",
+    "where": "Deepnest — warrior’s grave in the tunnels near the tram route.",
+    "drops": ["Essence"],
+    "notes": "Prioritize dodging the large wheel path; slip in brief hits after it passes. Keep eyes on the bouncing nail."
+  },
+  {
+    "slug": "gorb",
+    "title": "Gorb",
+    "summary": "An ascetic who rains spears from above in radial patterns.",
+    "difficulty": 1,
+    "overview": "Simple aerial duel: telegraphed lances appear in radial bursts from above.",
+    "where": "Howling Cliffs — warrior’s grave on a high spire.",
+    "drops": ["Essence"],
+    "notes": "Move diagonally between gaps; short hops and micro-dashes keep you safe between spear lines."
+  },
+  {
+    "slug": "markoth",
+    "title": "Markoth",
+    "summary": "Hides behind a spinning shield while sending guided strikes.",
+    "difficulty": 3,
+    "overview": "Defensive duel: a spinning shield orbits him (later two) while he fires guided nail spirits.",
+    "where": "Kingdom’s Edge — warrior’s grave in cliffside chambers near the Hive approach.",
+    "drops": ["Essence"],
+    "notes": "Circle just outside the shield’s path and poke after it passes. Later phase adds a second shield—keep lateral space."
+  },
+  {
+    "slug": "marmu",
+    "title": "Marmu",
+    "summary": "A playful spirit that rebounds like a ball—quirky, fragile.",
+    "difficulty": 1,
+    "overview": "Pinball-like fight: Marmu bounces rapidly and staggers from clean taps.",
+    "where": "Queen’s Gardens — warrior’s grave in the lower garden rooms.",
+    "drops": ["Essence"],
+    "notes": "Face the rebound angle: short taps then step aside for the return. Spells help if you’re cornered."
+  },
+  {
+    "slug": "no-eyes",
+    "title": "No Eyes",
+    "summary": "A blind singer; her lament steers unseen projectiles through platforms.",
+    "difficulty": 2,
+    "overview": "Haunting duel in darkness: floating projectiles drift through the platform maze to her song.",
+    "where": "Greenpath — Stone Sanctuary (Lumafly Lantern recommended).",
+    "drops": ["Essence"],
+    "notes": "Keep moving with the melody; walk off platform edges to realign safely, jump only when needed."
+  },
+  {
+    "slug": "xero",
+    "title": "Xero",
+    "summary": "A dream duelist with orbiting blades he hurls in bursts.",
+    "difficulty": 2,
+    "overview": "Starts with two blades orbiting and throwing in sets; count increases in later phase.",
+    "where": "City of Tears — platforms near the Memorial statue area.",
+    "drops": ["Essence"],
+    "notes": "Dash through gaps as blades leave orbit; punish just after throws before they realign."
+  }
+]

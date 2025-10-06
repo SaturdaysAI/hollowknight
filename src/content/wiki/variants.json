@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "absolute-radiance",
+    "title": "Absolute Radiance",
+    "summary": "The light’s final form—dense patterns, scant footing, relentless pressure.",
+    "difficulty": 5,
+    "overview": "Godhome’s ultimate trial of platforming and pattern reading: walls of blades, orbs, beams and a vertical climb to finish.",
+    "where": "Godhome — Pantheon of Hallownest / Hall of Gods (Ascended Radiance).",
+    "drops": [],
+    "notes": "Route platforms first, damage second. Save a dash for diagonal beams; during the final climb, prioritize survival over hits."
+  },
+  {
+    "slug": "enraged-guardian",
+    "title": "Enraged Guardian",
+    "summary": "A crystal worker unbound: more beams, less breathing room.",
+    "difficulty": 3,
+    "overview": "A meaner rematch of Crystal Guardian with faster sweeps and tighter spaces.",
+    "where": "Crystal Peak — returns to the chamber after the first fight (upper section).",
+    "drops": [],
+    "notes": "Use cover and short hops to weave through lasers; listen for charge cues and keep mid-height to adjust quickly."
+  },
+  {
+    "slug": "failed-champion",
+    "title": "Failed Champion",
+    "summary": "A furious echo of the False Knight with faster, heavier blows.",
+    "difficulty": 3,
+    "overview": "Dream rematch: far quicker slams, rocks and shockwaves punish greedy heals.",
+    "where": "Forgotten Crossroads — Dream Nail the False Knight’s husk.",
+    "drops": [],
+    "notes": "Wait for the true impact before dashing; punish exposed head quickly and reposition for falling debris."
+  },
+  {
+    "slug": "grey-prince-zote",
+    "title": "Grey Prince Zote",
+    "summary": "A swollen dream of grandeur—chaotic leaps, shadows, and spikes.",
+    "difficulty": 4,
+    "overview": "Bretta’s fever-dream boss with bombastic moves and crowding hazards.",
+    "where": "Dirtmouth — Bretta’s basement (after rescuing Zote).",
+    "drops": [],
+    "notes": "Clear space first; his long recoveries are safe punish windows. Expect escalating chaos with repeats."
+  },
+  {
+    "slug": "hornet-sentinel",
+    "title": "Hornet Sentinel",
+    "summary": "Advanced weave: tighter threads and chained thrusts, fewer openings.",
+    "difficulty": 4,
+    "overview": "Second duel with Hornet—faster strings, traps and harsher stage control.",
+    "where": "Kingdom’s Edge — arena near the approach to the Cast-Off Shell.",
+    "drops": [],
+    "notes": "Dash discipline is everything; bait throws, step through thread traps, punish after needle plants and long lunges."
+  },
+  {
+    "slug": "lost-kin",
+    "title": "Lost Kin",
+    "summary": "A freed vessel attacking without pause amid pools of infection.",
+    "difficulty": 4,
+    "overview": "Dream variant of Broken Vessel with denser infection blobs and faster chains.",
+    "where": "Ancient Basin — Dream Nail the Broken Vessel’s husk.",
+    "drops": [],
+    "notes": "Keep the arena clear of infection balloons; short punishes after dives and crossing slashes."
+  },
+  {
+    "slug": "nightmare-king-grimm",
+    "title": "Nightmare King Grimm",
+    "summary": "The troupe’s master at his peak—constant fire and perfect teleports.",
+    "difficulty": 5,
+    "overview": "Peak execution check: relentless bats, pillars, cloak slashes and precise teleports.",
+    "where": "Dirtmouth — Grimm Troupe tent (after empowering the Grimmchild).",
+    "drops": [],
+    "notes": "Learn the fire-bat tempo and cloak dives; stay grounded for faster reactions and punish on landings."
+  },
+  {
+    "slug": "pure-vessel",
+    "title": "Pure Vessel",
+    "summary": "Absolute technique: cuts, parries, and explosions on an unforgiving rhythm.",
+    "difficulty": 5,
+    "overview": "Godhome refinement of the Hollow Knight—clean patterns, no infection stalls, strict punish windows.",
+    "where": "Godhome — Pantheon of the Knight / Hall of Gods.",
+    "drops": [],
+    "notes": "Minimal jumps, micro-dashes and precise spacing. Respect parry tells; burst only after clear recoveries."
+  },
+  {
+    "slug": "sisters-of-battle",
+    "title": "Sisters of Battle",
+    "summary": "Three mantises in unison—crossed patterns that demand sharp reads.",
+    "difficulty": 5,
+    "overview": "Godhome trio upgrade to Mantis Lords: overlapping teleports, crosses and synchronized dives.",
+    "where": "Godhome — Pantheon of the Artist / Hall of Gods.",
+    "drops": [],
+    "notes": "Hold centerline; track audio/teleports and read the crossing angles before committing to a punish."
+  },
+  {
+    "slug": "soul-tyrant",
+    "title": "Soul Tyrant",
+    "summary": "The scholar reborn—two phases and surges of projectiles.",
+    "difficulty": 4,
+    "overview": "Dream upgrade to Soul Master with tighter fake-outs and a faster second phase.",
+    "where": "City of Tears — Soul Sanctum (Dream Nail at the boss arena).",
+    "drops": [],
+    "notes": "Don’t bite on the first slam; real impact comes after the feint. Keep moving during phase two’s mini-slams."
+  },
+  {
+    "slug": "white-defender",
+    "title": "White Defender",
+    "summary": "Honor renewed: refined jets and arcs in extended sequences.",
+    "difficulty": 3,
+    "overview": "Dream rematch of Dung Defender with sharper arcs and longer strings.",
+    "where": "Royal Waterways — Ogrim’s hidden den (Dream Nail).",
+    "drops": [],
+    "notes": "Jump/dash rhythm over arcs; heal after tunnels and long celebratory pauses."
+  },
+  {
+    "slug": "winged-nosk",
+    "title": "Winged Nosk",
+    "summary": "A winged mutation—gains height and crashes down unpredictably.",
+    "difficulty": 4,
+    "overview": "Godhome-exclusive variant with aerial charges, swoops and corrupted spits.",
+    "where": "Godhome — Hall of Gods / Pantheon appearances.",
+    "drops": [],
+    "notes": "Bait high swoops from mid-range; jump-dash through and punish on ground recoveries. Avoid walling yourself."
+  }
+]

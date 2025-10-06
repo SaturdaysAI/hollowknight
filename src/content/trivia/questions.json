@@ -1,0 +1,306 @@
+[
+  {
+    "id": "q-boss-01",
+    "category": "bosses",
+    "difficulty": 1,
+    "question": "Which boss wears a massive stolen shell and uses telegraphed hammer swings?",
+    "choices": ["False Knight", "Gruz Mother", "Vengefly King", "God Tamer"],
+    "answerIndex": 0,
+    "link": { "group": "bosses", "slug": "false-knight" },
+    "explain": "A small creature piloting oversized armor—the arena shakes on impact."
+  },
+  {
+    "id": "q-boss-02",
+    "category": "bosses",
+    "difficulty": 2,
+    "question": "Which boss floods the arena with spawning minions instead of moving much itself?",
+    "choices": ["Flukemarm", "Uumuu", "Nosk", "Crystal Guardian"],
+    "answerIndex": 0,
+    "link": { "group": "bosses", "slug": "flukemarm" },
+    "explain": "Flukemarm stays put and overwhelms with fluke spawn."
+  },
+  {
+    "id": "q-boss-03",
+    "category": "bosses",
+    "difficulty": 2,
+    "question": "Who is the proud knight that battles with dung orbs underground and midair?",
+    "choices": ["Dung Defender", "Hive Knight", "Watcher Knight", "Traitor Lord"],
+    "answerIndex": 0,
+    "link": { "group": "bosses", "slug": "dung-defender" },
+    "explain": "His jovial dives and rolling orbs define the fight."
+  },
+  {
+    "id": "q-boss-04",
+    "category": "bosses",
+    "difficulty": 2,
+    "question": "Which boss fires crystal laser beams across platforms?",
+    "choices": ["Crystal Guardian", "Soul Master", "Grimm", "Nosk"],
+    "answerIndex": 0,
+    "link": { "group": "bosses", "slug": "crystal-guardian" },
+    "explain": "The mine’s corruption channels into sweeping laser bursts."
+  },
+  {
+    "id": "q-boss-05",
+    "category": "bosses",
+    "difficulty": 3,
+    "question": "Which duo fight starts as a fair duel and escalates into coordinated sister patterns?",
+    "choices": ["Mantis Lords", "Brothers Oro & Mato", "Watcher Knight", "God Tamer"],
+    "answerIndex": 0,
+    "link": { "group": "bosses", "slug": "mantis-lords" },
+    "explain": "Phase 2 syncs attacks with tight, readable patterns."
+  },
+  {
+    "id": "q-boss-06",
+    "category": "bosses",
+    "difficulty": 3,
+    "question": "Which boss is a shapeshifter that lures prey by imitating familiar faces?",
+    "choices": ["Nosk", "Grimm", "Uumuu", "Broken Vessel"],
+    "answerIndex": 0,
+    "link": { "group": "bosses", "slug": "nosk" },
+    "explain": "Nosk mimics to bait the Knight into its lair."
+  },
+
+  {
+    "id": "q-dream-01",
+    "category": "warrior-dreams",
+    "difficulty": 1,
+    "question": "Which Warrior Dream rains radial spears from above?",
+    "choices": ["Gorb", "Elder Hu", "Xero", "Marmu"],
+    "answerIndex": 0,
+    "link": { "group": "warrior-dreams", "slug": "gorb" },
+    "explain": "Gorb’s hallmark is the expanding spear pattern."
+  },
+  {
+    "id": "q-dream-02",
+    "category": "warrior-dreams",
+    "difficulty": 1,
+    "question": "Who rebounds like a playful ball and is relatively fragile?",
+    "choices": ["Marmu", "No Eyes", "Galien", "Markoth"],
+    "answerIndex": 0,
+    "link": { "group": "warrior-dreams", "slug": "marmu" },
+    "explain": "Marmu bounces around the arena with lighthearted momentum."
+  },
+  {
+    "id": "q-dream-03",
+    "category": "warrior-dreams",
+    "difficulty": 2,
+    "question": "Which Warrior Dream uses orbiting blades that he hurls in bursts?",
+    "choices": ["Xero", "Elder Hu", "Galien", "No Eyes"],
+    "answerIndex": 0,
+    "link": { "group": "warrior-dreams", "slug": "xero" },
+    "explain": "Xero’s blades revolve until launched at the Knight."
+  },
+  {
+    "id": "q-dream-04",
+    "category": "warrior-dreams",
+    "difficulty": 2,
+    "question": "Which dreamer’s lament guides unseen projectiles through platforms?",
+    "choices": ["No Eyes", "Galien", "Markoth", "Gorb"],
+    "answerIndex": 0,
+    "link": { "group": "warrior-dreams", "slug": "no-eyes" },
+    "explain": "No Eyes obscures threats with line-of-sight tricks and sound."
+  },
+  {
+    "id": "q-dream-05",
+    "category": "warrior-dreams",
+    "difficulty": 2,
+    "question": "Who hides behind a spinning shield while launching guided strikes?",
+    "choices": ["Markoth", "Elder Hu", "Xero", "Marmu"],
+    "answerIndex": 0,
+    "link": { "group": "warrior-dreams", "slug": "markoth" },
+    "explain": "Markoth’s shield orbits and his nail attacks chase you."
+  },
+  {
+    "id": "q-dream-06",
+    "category": "warrior-dreams",
+    "difficulty": 2,
+    "question": "Which Warrior Dream summons a spectral wheel along with spinning weapon attacks?",
+    "choices": ["Galien", "Elder Hu", "Xero", "No Eyes"],
+    "answerIndex": 0,
+    "link": { "group": "warrior-dreams", "slug": "galien" },
+    "explain": "Galien’s rolling spirit wheel is a unique hazard to weave around."
+  },
+
+  {
+    "id": "q-var-01",
+    "category": "variants",
+    "difficulty": 3,
+    "question": "Which variant represents the troupe’s master at his absolute peak?",
+    "choices": ["Nightmare King Grimm", "Pure Vessel", "Soul Tyrant", "Lost Kin"],
+    "answerIndex": 0,
+    "link": { "group": "variants", "slug": "nightmare-king-grimm" },
+    "explain": "Relentless fire patterns and tight teleports."
+  },
+  {
+    "id": "q-var-02",
+    "category": "variants",
+    "difficulty": 3,
+    "question": "Which variant is a purified, perfected form of a vessel duel?",
+    "choices": ["Pure Vessel", "Lost Kin", "Grey Prince Zote", "Sisters of Battle"],
+    "answerIndex": 0,
+    "link": { "group": "variants", "slug": "pure-vessel" },
+    "explain": "Parries, slashes, and explosions on an unforgiving rhythm."
+  },
+  {
+    "id": "q-var-03",
+    "category": "variants",
+    "difficulty": 2,
+    "question": "Which variant is a faster, heavier echo of the False Knight?",
+    "choices": ["Failed Champion", "Enraged Guardian", "White Defender", "Winged Nosk"],
+    "answerIndex": 0,
+    "link": { "group": "variants", "slug": "failed-champion" },
+    "explain": "The dream rematch amplifies power and pace."
+  },
+  {
+    "id": "q-var-04",
+    "category": "variants",
+    "difficulty": 2,
+    "question": "Which variant is the supercharged crystal miner with denser beams?",
+    "choices": ["Enraged Guardian", "Soul Tyrant", "Winged Nosk", "Absolute Radiance"],
+    "answerIndex": 0,
+    "link": { "group": "variants", "slug": "enraged-guardian" },
+    "explain": "Fewer safe spots, more lasers—mind the platforms."
+  },
+  {
+    "id": "q-var-05",
+    "category": "variants",
+    "difficulty": 3,
+    "question": "Which mantis trio attack in perfect unison with crossed patterns?",
+    "choices": ["Sisters of Battle", "Mantis Lords", "Hornet Sentinel", "Grey Prince Zote"],
+    "answerIndex": 0,
+    "link": { "group": "variants", "slug": "sisters-of-battle" },
+    "explain": "A synchronized escalation of the classic duel."
+  },
+  {
+    "id": "q-var-06",
+    "category": "variants",
+    "difficulty": 3,
+    "question": "Which variant is the final, blinding form of the light?",
+    "choices": ["Absolute Radiance", "Soul Tyrant", "White Defender", "Lost Kin"],
+    "answerIndex": 0,
+    "link": { "group": "variants", "slug": "absolute-radiance" },
+    "explain": "Complex bullet patterns and platforming under pressure."
+  },
+
+  {
+    "id": "q-charm-01",
+    "category": "charms",
+    "difficulty": 1,
+    "question": "Which charm increases your nail’s range with a long, elegant arc?",
+    "choices": ["Longnail", "Quick Slash", "Mark of Pride", "Heavy Blow"],
+    "answerIndex": 0,
+    "link": { "group": "charms", "slug": "longnail" },
+    "explain": "Extends melee reach—simple and effective."
+  },
+  {
+    "id": "q-charm-02",
+    "category": "charms",
+    "difficulty": 2,
+    "question": "Which charm makes your nail strike much faster?",
+    "choices": ["Quick Slash", "Fury of the Fallen", "Soul Catcher", "Thorns of Agony"],
+    "answerIndex": 0,
+    "link": { "group": "charms", "slug": "quick-slash" },
+    "explain": "DPS staple—pairs well with range charms."
+  },
+  {
+    "id": "q-charm-03",
+    "category": "charms",
+    "difficulty": 1,
+    "question": "Which charm grants extra Soul when striking foes?",
+    "choices": ["Soul Catcher", "Grubsong", "Shaman Stone", "Soul Eater"],
+    "answerIndex": 0,
+    "link": { "group": "charms", "slug": "soul-catcher" },
+    "explain": "Great sustain in long areas and boss attempts."
+  },
+  {
+    "id": "q-charm-04",
+    "category": "charms",
+    "difficulty": 2,
+    "question": "Which charm boosts spell damage significantly?",
+    "choices": ["Shaman Stone", "Spell Twister", "Grubberfly’s Elegy", "Weaversong"],
+    "answerIndex": 0,
+    "link": { "group": "charms", "slug": "shaman-stone" },
+    "explain": "Core piece for spell-focused builds."
+  },
+  {
+    "id": "q-charm-05",
+    "category": "charms",
+    "difficulty": 2,
+    "question": "Which charm releases spikes on taking damage?",
+    "choices": ["Thorns of Agony", "Fragile Strength", "Defender’s Crest", "Joni’s Blessing"],
+    "answerIndex": 0,
+    "link": { "group": "charms", "slug": "thorns-of-agony" },
+    "explain": "Punishes enemies when you get hit—good in close brawls."
+  },
+  {
+    "id": "q-charm-06",
+    "category": "charms",
+    "difficulty": 2,
+    "question": "Which charm grants a beam from your nail when at full health?",
+    "choices": ["Grubberfly’s Elegy", "Mark of Pride", "Fury of the Fallen", "Heavy Blow"],
+    "answerIndex": 0,
+    "link": { "group": "charms", "slug": "grubberflys-elegy" },
+    "explain": "Rewards careful play with ranged pressure."
+  },
+
+  {
+    "id": "q-item-01",
+    "category": "items",
+    "difficulty": 1,
+    "question": "Which item allows you to read and understand the map benches?",
+    "choices": ["Quill", "Wayward Compass", "City Crest", "Lumafly Lantern"],
+    "answerIndex": 0,
+    "link": { "group": "items", "slug": "quill" },
+    "explain": "You’ll mark newly explored areas on purchased maps."
+  },
+  {
+    "id": "q-item-02",
+    "category": "items",
+    "difficulty": 1,
+    "question": "Which item reveals your location on the map when equipped (as a charm)?",
+    "choices": ["Wayward Compass", "City Crest", "Gathering Swarm", "Rancid Egg"],
+    "answerIndex": 0,
+    "link": { "group": "items", "slug": "wayward-compass" },
+    "explain": "A comfort charm for early exploration."
+  },
+  {
+    "id": "q-item-03",
+    "category": "items",
+    "difficulty": 2,
+    "question": "Which item is required to light up dark caverns and paths?",
+    "choices": ["Lumafly Lantern", "Wanderer’s Journal", "King’s Idol", "Elegant Key"],
+    "answerIndex": 0,
+    "link": { "group": "items", "slug": "lumafly-lantern" },
+    "explain": "Opens access to otherwise pitch-black areas."
+  },
+  {
+    "id": "q-item-04",
+    "category": "items",
+    "difficulty": 2,
+    "question": "Which key item is used to enter the City of Tears from the Fungal Wastes?",
+    "choices": ["City Crest", "Elegant Key", "Simple Key", "Love Key"],
+    "answerIndex": 0,
+    "link": { "group": "items", "slug": "city-crest" },
+    "explain": "It fits into the gate mechanism on the city’s entrance."
+  },
+  {
+    "id": "q-item-05",
+    "category": "items",
+    "difficulty": 2,
+    "question": "Which collectible journals and idols are mainly for geo and lore, not progression?",
+    "choices": ["Wanderer’s Journal / King’s Idol", "City Crest / Love Key", "Lumafly Lantern / Quill", "Mask Shard / Vessel Fragment"],
+    "answerIndex": 0,
+    "link": { "group": "items", "slug": "wanderers-journal" },
+    "explain": "They sell for geo and hint at Hallownest’s past."
+  },
+  {
+    "id": "q-item-06",
+    "category": "items",
+    "difficulty": 2,
+    "question": "Which item type opens locked doors and stag stations but breaks on use?",
+    "choices": ["Simple Key", "Elegant Key", "Tram Pass", "Dream Key"],
+    "answerIndex": 0,
+    "link": { "group": "items", "slug": "simple-key" },
+    "explain": "Single-use keys for certain locks around Hallownest."
+  }
+]

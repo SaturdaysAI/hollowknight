@@ -1,0 +1,282 @@
+[
+  {
+    "slug": "broken-vessel",
+    "title": "Broken Vessel",
+    "summary": "An empty shell driven by a bright infection; erratic leaps and bursting blobs fill the arena.",
+    "difficulty": 3,
+    "overview": "A swift, erratic duel mixing cross-slashes, dives and infection bursts. Beating it opens the path to new mobility.",
+    "where": "Ancient Basin — sealed chamber to the east.",
+    "drops": ["Access to Monarch Wings (in the area beyond)"],
+    "notes": "Punish after cross-slashes and dive recoveries; clear infection balloons before healing."
+  },
+  {
+    "slug": "brooding-mawlek",
+    "title": "Brooding Mawlek",
+    "summary": "A territorial beast that spits corrosive globs and swipes with huge claws.",
+    "difficulty": 2,
+    "overview": "Optional early challenge combining big leaps, claw swipes and acid spits in a tight arena.",
+    "where": "Forgotten Crossroads — hidden room behind breakable walls.",
+    "drops": [],
+    "notes": "Stay mid-range to read spit patterns; dash through landings and counter."
+  },
+  {
+    "slug": "brothers-oro-mato",
+    "title": "Brothers Oro & Mato",
+    "summary": "Nail masters who trade precise thrusts and coordinated rushes.",
+    "difficulty": 3,
+    "overview": "Coordinated nail masters who alternate pokes, rushes and parries with few open windows.",
+    "where": "Godhome — Pantheon of the Master.",
+    "drops": [],
+    "notes": "Don’t chase; punish the brother who finishes an animation while the other retreats."
+  },
+  {
+    "slug": "collector",
+    "title": "The Collector",
+    "summary": "A playful captor that tosses bottled creatures nonstop and bounds around the room.",
+    "difficulty": 2,
+    "overview": "Ceiling-skittering menace that constantly drops jarred enemies to overwhelm you.",
+    "where": "City of Tears — Tower of Love (locked by Love Key).",
+    "drops": ["Collector’s Map (reveals remaining Grubs)"],
+    "notes": "Prioritize breaking jars to control the room; punish ground touches."
+  },
+  {
+    "slug": "crystal-guardian",
+    "title": "Crystal Guardian",
+    "summary": "A miner warped by crystals; fires laser bursts and rattling charges.",
+    "difficulty": 2,
+    "overview": "Crystal-warped miner who fires sweeping beams and dashes; tests line-of-sight and vertical movement.",
+    "where": "Crystal Peak — near mining halls and the bench area.",
+    "drops": ["Bench access / progression"],
+    "notes": "Use cover and short hops to weave between beams; listen for charge audio cues."
+  },
+  {
+    "slug": "dung-defender",
+    "title": "Dung Defender",
+    "summary": "A proud knight who rolls dung orbs and dives underground to surprise foes.",
+    "difficulty": 2,
+    "overview": "Rhythmic arcs of dung and tunneling dives from a jovial knight of the old guard.",
+    "where": "Royal Waterways.",
+    "drops": ["Defender's Crest (Charm)"],
+    "notes": "Jump/dash over dung arcs; after tunneling there’s a safe punish (or heal) window."
+  },
+  {
+    "slug": "false-knight",
+    "title": "False Knight",
+    "summary": "A small brute in oversized armor; big, telegraphed swings and long staggers.",
+    "difficulty": 1,
+    "overview": "Introductory armor shell with big tells; staggers open long opportunities.",
+    "where": "Forgotten Crossroads — large eastern chamber.",
+    "drops": ["City Crest"],
+    "notes": "Strike the exposed head after slams to trigger staggers; great time to heal."
+  },
+  {
+    "slug": "flukemarm",
+    "title": "Flukemarm",
+    "summary": "An immobile broodmother that floods the arena with flying spawn.",
+    "difficulty": 2,
+    "overview": "Stationary broodmother that spawns fluke swarms constantly.",
+    "where": "Royal Waterways — side nest cavern.",
+    "drops": ["Flukenest (Charm)"],
+    "notes": "Spell burst (e.g., Shade Soul) clears adds quickly; avoid being cornered."
+  },
+  {
+    "slug": "god-tamer",
+    "title": "God Tamer",
+    "summary": "A duelist who fights alongside a plated beast; pressure comes from the pair.",
+    "difficulty": 3,
+    "overview": "Duelist partnered with a plated beast; the fight is about managing both threats.",
+    "where": "Kingdom’s Edge — Colosseum of Fools (Trial of the Fool).",
+    "drops": ["Trial of the Fool completion rewards"],
+    "notes": "Focus the beast to open brief punish windows on the Tamer; don’t get sandwiched."
+  },
+  {
+    "slug": "great-nailsage-sly",
+    "title": "Great Nailsage Sly",
+    "summary": "A legendary teacher: blistering slashes, parries, and swift techniques.",
+    "difficulty": 5,
+    "overview": "Lightning-fast duel with feints, parries and tight punish windows.",
+    "where": "Godhome — Pantheon of the Sage.",
+    "drops": [],
+    "notes": "Keep hops low; micro-dash and counter after parries or recovery frames."
+  },
+  {
+    "slug": "grimm",
+    "title": "Grimm",
+    "summary": "A theatrical demon who dances through fire, projectiles, and teleports.",
+    "difficulty": 4,
+    "overview": "Flame-dancing troupe master with teleports, bats and vertical slashes.",
+    "where": "Dirtmouth — Grimm Troupe tent (Grimm Troupe questline).",
+    "drops": ["Grimmchild quest progression"],
+    "notes": "Learn the tempo of fire-bats and dives; punish after grounded recoveries."
+  },
+  {
+    "slug": "gruz-mother",
+    "title": "Gruz Mother",
+    "summary": "A giant fly that ricochets with charges; bursts into hatchlings on defeat.",
+    "difficulty": 1,
+    "overview": "Early flyer that ricochets around; collapses into hatchlings after defeat.",
+    "where": "Forgotten Crossroads — western rooms.",
+    "drops": [],
+    "notes": "Bait dives and punish; save a bit of Soul for the hatchling cleanup."
+  },
+  {
+    "slug": "hive-knight",
+    "title": "Hive Knight",
+    "summary": "Guardian of the hive: rapid thrusts and swarms of bees punish airborne foes.",
+    "difficulty": 3,
+    "overview": "Relentless guardian mixing lance flurries with bee swarms; high mobility check.",
+    "where": "The Hive — champion’s chamber.",
+    "drops": ["Hiveblood (Charm)"],
+    "notes": "Hit-and-run; prioritize evading drones to preserve heal windows."
+  },
+  {
+    "slug": "hollow-knight",
+    "title": "The Hollow Knight",
+    "summary": "A tragic vessel mixing lunges, shockwaves, and searing infection.",
+    "difficulty": 4,
+    "overview": "Climactic duel of slashes, skewers and infection bursts with sparse heal windows.",
+    "where": "Temple of the Black Egg — endgame arena.",
+    "drops": ["Ending progression"],
+    "notes": "Heal on collapses or long recoveries; stay composed during chain skewers."
+  },
+  {
+    "slug": "hornet-protector",
+    "title": "Hornet Protector",
+    "summary": "Needle and thread: feints, blocks, and traps that demand precise timing.",
+    "difficulty": 3,
+    "overview": "Precise duel that teaches dash timing and patient punishes; first meeting with Hornet.",
+    "where": "Greenpath — central arena beyond the lakes.",
+    "drops": [],
+    "notes": "Respect throws and lunges; punish after thread recoveries and needle plants."
+  },
+  {
+    "slug": "mantis-lords",
+    "title": "Mantis Lords",
+    "summary": "A duel of clear patterns that escalates into coordinated sister attacks.",
+    "difficulty": 3,
+    "overview": "Honorable trial that unlocks respect and safe passage through the village.",
+    "where": "Fungal Wastes — Mantis Village (throne arena).",
+    "drops": ["Tribe’s respect & safe passage"],
+    "notes": "Phase 1 solo patterns; Phase 2 duo rhythm. Hold center to avoid teleports on top of you."
+  },
+  {
+    "slug": "massive-moss-charger",
+    "title": "Massive Moss Charger",
+    "summary": "A mossy mound that barrels forward and breaks apart; open after charges.",
+    "difficulty": 1,
+    "overview": "Big, readable charges and brief punish windows—simple but satisfying.",
+    "where": "Greenpath — open fields.",
+    "drops": [],
+    "notes": "Keep centerline; step aside late, then counter during recovery."
+  },
+  {
+    "slug": "nosk",
+    "title": "Nosk",
+    "summary": "A mimic wearing familiar faces; wall dashes and sticky infection sprays.",
+    "difficulty": 3,
+    "overview": "Predator with long charges and corruption spits in a platformed arena.",
+    "where": "Deepnest — hidden tunnels off the nest.",
+    "drops": ["Pale Ore"],
+    "notes": "Bait charges at mid-distance; jump-dash over and avoid corners."
+  },
+  {
+    "slug": "oblobbles",
+    "title": "Oblobbles",
+    "summary": "A twin swarm spitting crossed volleys; the survivor enrages.",
+    "difficulty": 3,
+    "overview": "Twin flyers that spit crossing volleys; the survivor speeds up after the first falls.",
+    "where": "Kingdom’s Edge — Colosseum of Fools (Trial of the Conqueror).",
+    "drops": ["Trial of the Conqueror completion rewards"],
+    "notes": "Even their HP if possible; otherwise prepare for a faster, denser second phase."
+  },
+  {
+    "slug": "paintmaster-sheo",
+    "title": "Paintmaster Sheo",
+    "summary": "A nail artist who paints elemental strokes and sweeping cuts.",
+    "difficulty": 4,
+    "overview": "Artist’s duel with three brush styles: broad strokes, sharp slashes and ink rain.",
+    "where": "Godhome — Pantheon of the Artist.",
+    "drops": [],
+    "notes": "Read color/pose to pre-position; keep calm during ink rain and counter on landings."
+  },
+  {
+    "slug": "radiance",
+    "title": "Radiance",
+    "summary": "A being of light saturating the arena with blades, beams, and platforms.",
+    "difficulty": 5,
+    "overview": "True final fight with platform phases, beams, orbs and expanding pressure.",
+    "where": "Dream realm — after Hollow Knight with Awoken Dream Nail.",
+    "drops": ["True Ending"],
+    "notes": "Route platforms safely; conserve dashes for diagonal beams and the final climb."
+  },
+  {
+    "slug": "soul-master",
+    "title": "Soul Master",
+    "summary": "Scholar of the capital; teleports and plunges empowered by Soul.",
+    "difficulty": 3,
+    "overview": "Two-phase caster with fake-out slams and Soul orbs; tests teleport reads.",
+    "where": "City of Tears — Soul Sanctum.",
+    "drops": ["Desolate Dive (Spell)"],
+    "notes": "Wait out the fake slam; in phase 2, keep moving to avoid rapid mini-slams."
+  },
+  {
+    "slug": "soul-warrior",
+    "title": "Soul Warrior",
+    "summary": "An ethereal fighter who summons shades and strikes from the air.",
+    "difficulty": 2,
+    "overview": "Agile mini-boss with leaps, teleports and conjured blades.",
+    "where": "City of Tears — Soul Sanctum (multiple rooms).",
+    "drops": [],
+    "notes": "Stay slightly below/diagonal; punish after plunges and teleport recoveries."
+  },
+  {
+    "slug": "traitor-lord",
+    "title": "Traitor Lord",
+    "summary": "A banished ruler: blistering rushes and low sweeping cuts.",
+    "difficulty": 4,
+    "overview": "Overwhelming rushes and wide slashes guarding the gardens’ path forward.",
+    "where": "Queen’s Gardens — traitor’s hall.",
+    "drops": [],
+    "notes": "Keep lateral space for rushes; punish the long recovery after ground shocks."
+  },
+  {
+    "slug": "uumuu",
+    "title": "Uumuu",
+    "summary": "An electric mass protected by fields; openings arrive via allies’ shocks.",
+    "difficulty": 3,
+    "overview": "Invulnerable until its field is broken—timed openings with an ally’s help.",
+    "where": "Fog Canyon — Teacher’s Archives.",
+    "drops": ["Access to Dreamer Monomon"],
+    "notes": "Circle wide until the field drops, then burst damage; beware of electric adds."
+  },
+  {
+    "slug": "vengefly-king",
+    "title": "Vengefly King",
+    "summary": "A buzzing tyrant that leads charges and summons swarms.",
+    "difficulty": 1,
+    "overview": "Bulky flyer that leads charges and summons adds; appears in trials and an early event.",
+    "where": "Greenpath (Zote rescue event) / Colosseum (Trial of the Warrior).",
+    "drops": [],
+    "notes": "Clear adds quickly; short punishes after charge recoveries."
+  },
+  {
+    "slug": "watcher-knight",
+    "title": "Watcher Knight",
+    "summary": "Twin knights in relay; the room fills with rolls and leaps.",
+    "difficulty": 4,
+    "overview": "Rolling, leaping guardians fought in sequence; the room snowballs if not controlled.",
+    "where": "City of Tears — Watcher’s Spire.",
+    "drops": ["Path to Dreamer Lurien"],
+    "notes": "Reduce their count fast—an environmental trick can disable one before the fight."
+  },
+  {
+    "slug": "zote",
+    "title": "Zote",
+    "summary": "Self-styled hero undone by his own bluster and blunders.",
+    "difficulty": 1,
+    "overview": "Blustering duelist more dangerous to himself than to others—appears in trials and events.",
+    "where": "Greenpath (rescue) / Colosseum (Trial of the Warrior).",
+    "drops": [],
+    "notes": "Play it safe; his recoveries are long and easy to punish."
+  }
+]

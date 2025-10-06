@@ -13,7 +13,7 @@ import NotFound from "./features/wiki/pages/NotFound";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         {/* Home */}
         <Route path="/" element={<Home />} />

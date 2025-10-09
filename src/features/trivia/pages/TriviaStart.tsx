@@ -46,7 +46,7 @@ export default function TriviaStart() {
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [score, setScore] = useState(0);
 
-  // Fondo + página estática (sin scroll) mientras está montada
+  // Fondo + control de scroll: móvil -> scroll libre; escritorio -> fijo como antes
   useEffect(() => {
     const root = document.getElementById("root") || document.documentElement;
     const prevBg = root.style.getPropertyValue("--page-bg");
@@ -54,14 +54,28 @@ export default function TriviaStart() {
 
     const prevOverflowHtml = document.documentElement.style.overflow;
     const prevOverflowBody = document.body.style.overflow;
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
+
+    const applyOverflow = () => {
+      // “móvil” si tiene puntero táctil o el ancho es <= 768
+      const isMobile = window.matchMedia("(pointer: coarse), (max-width: 768px)").matches;
+      if (isMobile) {
+        document.documentElement.style.overflow = "auto";
+        document.body.style.overflow = "auto";
+      } else {
+        document.documentElement.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+      }
+    };
+
+    applyOverflow();
+    window.addEventListener("resize", applyOverflow);
 
     return () => {
       if (prevBg) root.style.setProperty("--page-bg", prevBg);
       else root.style.removeProperty("--page-bg");
       document.documentElement.style.overflow = prevOverflowHtml;
       document.body.style.overflow = prevOverflowBody;
+      window.removeEventListener("resize", applyOverflow);
     };
   }, []);
 
@@ -85,7 +99,7 @@ export default function TriviaStart() {
   const handleStart = () => {
     const pool = shuffle(filtered).slice(0, Math.max(1, numQuestions));
     const prepared: TriviaQuestion[] = pool.map((q) => {
-      const order = shuffle([...q.choices].map((_, i) => i)); // índices aleatorios
+      const order = shuffle([...q.choices].map((_, i) => i));
       const shuffledChoices = order.map((i) => q.choices[i]);
       const newAnswerIndex = order.indexOf(q.answerIndex);
       return { ...q, choices: shuffledChoices, answerIndex: newAnswerIndex };
@@ -139,7 +153,7 @@ export default function TriviaStart() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [started, deck, index, picked]); // OK
+  }, [started, deck, index, picked]);
 
   return (
     <>
@@ -266,10 +280,9 @@ export default function TriviaStart() {
                 <h2 style={{ fontSize: 24, margin: "0 0 12px" }}>{deck[index].question}</h2>
                 {deck[index].link && (
                   <p className="detail-sub" style={{ marginTop: -6, marginBottom: 12 }}>
-                    TOPIC: <code>{deck[index].link!.group}</code>
                   </p>
                 )}
-
+                
                 <ul
                   style={{
                     listStyle: "none",
@@ -341,7 +354,7 @@ export default function TriviaStart() {
         )}
       </main>
 
-      {/* Footer fijo para que siempre sea visible, incluso con scroll global bloqueado */}
+      {/* Footer fijo para que siempre sea visible */}
       <div style={{ position: "fixed", left: 0, right: 0, bottom: 0, zIndex: 10 }}>
         <Footer />
       </div>

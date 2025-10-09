@@ -503,7 +503,47 @@ strong, b,
 .start-btn{ font-weight:800; }
 
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE (solo móvil: arregla la barra de búsqueda)
+   ========================================================= */
+@media (max-width:768px){
+  /* Contenedor cómodo */
+  .container{ padding: calc(var(--space) + 6px) 16px; }
+  .container-left{ padding:16px; margin:0 auto; }
+
+  /* Hero fluido */
+  .hero{ width:min(560px, 92vw); padding:14px 0 18px; }
+
+  /* 🔧 Barra de búsqueda: ocupa 100% y permite salto de línea del botón */
+  .search-bar{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 12px 0 16px;
+  }
+  .search-bar input{
+    flex: 1 1 100%;
+    min-width: 0;
+    width: 100%;
+  }
+  .search-bar button,
+  .search-bar .btn{
+    width: 100%;           /* botón debajo cuando no quepa a una línea */
+  }
+
+  /* Botones apilados y a ancho completo */
+  .actions.center{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:10px;
+    width:100%;
+    margin-top:10px;
+  }
+}
+
+/* =========================================================
+   Desktop (mantiene tu diseño actual)
    ========================================================= */
 @media (min-width:1024px){
   h1{ font-size:56px; }

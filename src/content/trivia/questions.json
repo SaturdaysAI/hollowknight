@@ -302,5 +302,414 @@
     "answerIndex": 0,
     "link": { "group": "items", "slug": "simple-key" },
     "explain": "Single-use keys for certain locks around Hallownest."
+  },
+  {
+    "id": "q-boss-07",
+    "category": "bosses",
+    "difficulty": 1,
+    "question": "Where do you fight False Knight?",
+    "choices": ["Forgotten Crossroads", "Greenpath", "City of Tears", "Crystal Peak"],
+    "answerIndex": 0,
+    "explain": "False Knight’s arena is in the Forgotten Crossroads."
+  },
+  {
+    "id": "q-boss-08",
+    "category": "bosses",
+    "difficulty": 1,
+    "question": "Which boss guards the Mothwing Cloak?",
+    "choices": ["Hornet (Greenpath)", "Brooding Mawlek", "Gruz Mother", "Vengefly King"],
+    "answerIndex": 0,
+    "explain": "Hornet’s first fight in Greenpath rewards the Mothwing Cloak (dash)."
+  },
+  {
+    "id": "q-boss-09",
+    "category": "bosses",
+    "difficulty": 1,
+    "question": "Which boss sleeps in the Ancestral Mound?",
+    "choices": ["Elder Baldur", "Vengefly King", "Gruz Mother", "Brooding Mawlek"],
+    "answerIndex": 2,
+    "explain": "Gruz Mother is found near the Ancestral Mound area of Crossroads."
+  },
+  {
+    "id": "q-boss-10",
+    "category": "bosses",
+    "difficulty": 2,
+    "question": "Soul Master’s arena is located in which sub-area of City of Tears?",
+    "choices": ["Watcher’s Spire", "Soul Sanctum", "King’s Station", "Tower of Love"],
+    "answerIndex": 1,
+    "explain": "Soul Master rules the Soul Sanctum in the City of Tears."
+  },
+  {
+    "id": "q-boss-11",
+    "category": "bosses",
+    "difficulty": 2,
+    "question": "Which boss is required to access the Abyss via King’s Brand?",
+    "choices": ["Broken Vessel", "Nosk", "Hornet Sentinel", "Traitor Lord"],
+    "answerIndex": 2,
+    "explain": "Hornet’s second battle (Sentinel) grants access to King’s Brand."
+  },
+  {
+    "id": "q-boss-12",
+    "category": "bosses",
+    "difficulty": 2,
+    "question": "Which boss has a dream variant named ‘Lost Kin’?",
+    "choices": ["Broken Vessel", "Dung Defender", "Watcher Knights", "God Tamer"],
+    "answerIndex": 0,
+    "explain": "Broken Vessel’s dream rematch is Lost Kin."
+  },
+  {
+    "id": "q-boss-13",
+    "category": "bosses",
+    "difficulty": 3,
+    "question": "How many Watcher Knights fight you simultaneously once the chandelier is dropped?",
+    "choices": ["Two", "Three", "Four", "Five"],
+    "answerIndex": 1,
+    "explain": "Dropping the chandelier removes one Knight; three remain active at once."
+  },
+  {
+    "id": "q-boss-14",
+    "category": "bosses",
+    "difficulty": 3,
+    "question": "What unique mechanic does Nosk use to lure the Knight?",
+    "choices": ["Spawns explosive blobs", "Mimics the Knight’s allies", "Creates rotating shields", "Turns invisible"],
+    "answerIndex": 1,
+    "explain": "Nosk mimics a familiar figure to bait the player deeper into Deepnest."
+  },
+  {
+    "id": "q-boss-15",
+    "category": "bosses",
+    "difficulty": 1,
+    "question": "Which boss is fought in the Stone Sanctuary of Greenpath?",
+    "choices": ["Elder Hu", "Massive Moss Charger", "Mantis Lords", "Traitor Lord"],
+    "answerIndex": 1,
+    "explain": "Massive Moss Charger lurks in the Stone Sanctuary."
+  },
+
+  {
+    "id": "q-dream-07",
+    "category": "warrior-dreams",
+    "difficulty": 1,
+    "question": "Which dream warrior resides in the City of Tears?",
+    "choices": ["Elder Hu", "Xero", "No Eyes", "Marmu"],
+    "answerIndex": 1,
+    "explain": "Xero’s grave is in the City of Tears."
+  },
+  {
+    "id": "q-dream-08",
+    "category": "warrior-dreams",
+    "difficulty": 1,
+    "question": "Which dream boss floats and fires rings of projectiles in Greenpath?",
+    "choices": ["No Eyes", "Marmu", "Elder Hu", "Gorb"],
+    "answerIndex": 3,
+    "explain": "Gorb is found in Greenpath and attacks with circular volleys."
+  },
+  {
+    "id": "q-dream-09",
+    "category": "warrior-dreams",
+    "difficulty": 1,
+    "question": "Which dream warrior is found in the Queen’s Gardens?",
+    "choices": ["Marmu", "Gorb", "Elder Hu", "No Eyes"],
+    "answerIndex": 0,
+    "explain": "Marmu happily bounces in Queen’s Gardens."
+  },
+  {
+    "id": "q-dream-10",
+    "category": "warrior-dreams",
+    "difficulty": 2,
+    "question": "Where is No Eyes located?",
+    "choices": ["Fog Canyon", "Howling Cliffs", "Greenpath’s Stone Sanctuary", "Fungal Wastes"],
+    "answerIndex": 2,
+    "explain": "No Eyes dwells in the Stone Sanctuary of Greenpath."
+  },
+  {
+    "id": "q-dream-11",
+    "category": "warrior-dreams",
+    "difficulty": 2,
+    "question": "Which dream warrior uses pillar-summoning shockwaves?",
+    "choices": ["Elder Hu", "Xero", "Gorb", "No Eyes"],
+    "answerIndex": 0,
+    "explain": "Elder Hu spawns shockwave pillars around the arena."
+  },
+  {
+    "id": "q-dream-12",
+    "category": "warrior-dreams",
+    "difficulty": 2,
+    "question": "How do you access dream warrior fights?",
+    "choices": ["Using Simple Keys", "Wielding the Dream Nail", "Purchasing a pass", "Resting at specific benches"],
+    "answerIndex": 1,
+    "explain": "Dream Nail awakens the lingering spirits for combat."
+  },
+  {
+    "id": "q-dream-13",
+    "category": "warrior-dreams",
+    "difficulty": 3,
+    "question": "What resource do dream warriors award that progresses Seer’s rewards?",
+    "choices": ["Pale Ore", "Essence", "Geo", "Lifeblood"],
+    "answerIndex": 1,
+    "explain": "Defeating dream warriors yields Essence for the Seer in Resting Grounds."
+  },
+  {
+    "id": "q-dream-14",
+    "category": "warrior-dreams",
+    "difficulty": 3,
+    "question": "Which warrior dream requires careful listening due to a dark arena?",
+    "choices": ["Gorb", "Elder Hu", "No Eyes", "Xero"],
+    "answerIndex": 2,
+    "explain": "No Eyes fights in near darkness within the Stone Sanctuary."
+  },
+  {
+    "id": "q-dream-15",
+    "category": "warrior-dreams",
+    "difficulty": 1,
+    "question": "Which dream warrior is atop Howling Cliffs?",
+    "choices": ["Gorb", "Xero", "Elder Hu", "Marmu"],
+    "answerIndex": 0,
+    "explain": "Gorb’s grave is on the cliffs."
+  },
+
+  {
+    "id": "q-var-07",
+    "category": "variants",
+    "difficulty": 1,
+    "question": "Which boss’s arena floods in Royal Waterways?",
+    "choices": ["Flukemarm", "Dung Defender", "Uumuu", "Traitor Lord"],
+    "answerIndex": 1,
+    "explain": "Dung Defender’s arena sits in the Royal Waterways."
+  },
+  {
+    "id": "q-var-08",
+    "category": "variants",
+    "difficulty": 1,
+    "question": "Which boss returns as a dream rematch called ‘Grey Prince’?",
+    "choices": ["Zote", "Nosk", "Gruz Mother", "God Tamer"],
+    "answerIndex": 0,
+    "explain": "Dream Zote becomes Grey Prince Zote in Dirtmouth."
+  },
+  {
+    "id": "q-var-09",
+    "category": "variants",
+    "difficulty": 1,
+    "question": "What variant of Dung Defender is met in the White Palace’s dream?",
+    "choices": ["White Defender", "Pure Defender", "Radiant Defender", "Pale Defender"],
+    "answerIndex": 0,
+    "explain": "White Defender is Dung Defender’s dream form."
+  },
+  {
+    "id": "q-var-10",
+    "category": "variants",
+    "difficulty": 2,
+    "question": "Which boss gains a new phase as ‘Soul Tyrant’?",
+    "choices": ["Soul Master", "Crystal Guardian", "Watcher Knight", "Broken Vessel"],
+    "answerIndex": 0,
+    "explain": "Soul Master’s dream fight is Soul Tyrant."
+  },
+  {
+    "id": "q-var-11",
+    "category": "variants",
+    "difficulty": 2,
+    "question": "Which boss appears twice as ‘Crystal Guardian’ and ‘Enraged Guardian’?",
+    "choices": ["Nosk", "Mantis Lords", "Crystal Guardian", "Marmu"],
+    "answerIndex": 2,
+    "explain": "Defeating the first version unlocks Enraged Guardian later."
+  },
+  {
+    "id": "q-var-12",
+    "category": "variants",
+    "difficulty": 2,
+    "question": "Which boss’s dream fight is ‘Lost Kin’?",
+    "choices": ["Broken Vessel", "Traitor Lord", "Hive Knight", "God Tamer"],
+    "answerIndex": 0,
+    "explain": "Broken Vessel’s dream variant is Lost Kin."
+  },
+  {
+    "id": "q-var-13",
+    "category": "variants",
+    "difficulty": 3,
+    "question": "What changes most in the ‘Pure Vessel’ fight?",
+    "choices": ["Damage values only", "Arena size only", "Move set speed & new patterns", "Geo rewards only"],
+    "answerIndex": 2,
+    "explain": "Pure Vessel is a faster, expanded move set version of Hollow Knight."
+  },
+  {
+    "id": "q-var-14",
+    "category": "variants",
+    "difficulty": 3,
+    "question": "Which boss becomes ‘Grey Prince’ after rescuing someone repeatedly?",
+    "choices": ["Tiso", "Zote", "Cloth", "Lemm"],
+    "answerIndex": 1,
+    "explain": "Rescuing Zote leads to his boastful dream form: Grey Prince Zote."
+  },
+  {
+    "id": "q-var-15",
+    "category": "variants",
+    "difficulty": 1,
+    "question": "Which Royal Waterways mini-boss has a variant swarm fight?",
+    "choices": ["Flukemarm", "Uumuu", "Grimm", "Nosk"],
+    "answerIndex": 0,
+    "explain": "Flukemarm spawns flukefeys in a swarm-like battle."
+  },
+
+  {
+    "id": "q-char-07",
+    "category": "charms",
+    "difficulty": 1,
+    "question": "What does Wayward Compass do?",
+    "choices": ["Reveals the map", "Shows your location on the map", "Increases Soul gain", "Boosts nail range"],
+    "answerIndex": 1,
+    "explain": "Wayward Compass displays your position on the map."
+  },
+  {
+    "id": "q-char-08",
+    "category": "charms",
+    "difficulty": 1,
+    "question": "Which charm increases the size of your nail attacks?",
+    "choices": ["Longnail", "Quick Slash", "Shaman Stone", "Thorns of Agony"],
+    "answerIndex": 0,
+    "explain": "Longnail extends nail range."
+  },
+  {
+    "id": "q-char-09",
+    "category": "charms",
+    "difficulty": 1,
+    "question": "Which charm greatly boosts spell damage?",
+    "choices": ["Shaman Stone", "Spell Twister", "Dashmaster", "Defender’s Crest"],
+    "answerIndex": 0,
+    "explain": "Shaman Stone significantly increases spell damage."
+  },
+  {
+    "id": "q-char-10",
+    "category": "charms",
+    "difficulty": 2,
+    "question": "What do you need to equip more charms than your slots allow safely?",
+    "choices": ["Soul Vessels", "Notches", "Charm Overcharm", "Fragile Greed"],
+    "answerIndex": 2,
+    "explain": "Overcharm lets you exceed notches but you take double damage."
+  },
+  {
+    "id": "q-char-11",
+    "category": "charms",
+    "difficulty": 2,
+    "question": "Which charm attracts Geo from a distance?",
+    "choices": ["Gathering Swarm", "Greed Charm", "Sprintmaster", "Defender’s Crest"],
+    "answerIndex": 0,
+    "explain": "Gathering Swarm collects Geo for you."
+  },
+  {
+    "id": "q-char-12",
+    "category": "charms",
+    "difficulty": 2,
+    "question": "Which two charms combine into ‘Carefree Melody’ after a ritual?",
+    "choices": ["Grubsong + Weaversong", "Grimmchild + Grubsong", "Grimmchild + Defender’s Crest", "Grimmchild (after Troupe quest)"],
+    "answerIndex": 3,
+    "explain": "Completing the alternate ending of the Grimm Troupe turns Grimmchild into Carefree Melody."
+  },
+  {
+    "id": "q-char-13",
+    "category": "charms",
+    "difficulty": 3,
+    "question": "What hidden effect happens when Defender’s Crest is used with Flukenest?",
+    "choices": ["Spells cost less", "Flukes become toxic clouds", "Nail gets poison", "Movement speed increases"],
+    "answerIndex": 1,
+    "explain": "Flukenest projectiles become toxic clouds with Defender’s Crest."
+  },
+  {
+    "id": "q-char-14",
+    "category": "charms",
+    "difficulty": 3,
+    "question": "Which charm set is popular for rapid nail DPS?",
+    "choices": ["Quick Slash + Mark of Pride", "Fury + Thorns", "Spell Twister + Shaman Stone", "Carefree Melody + Gathering Swarm"],
+    "answerIndex": 0,
+    "explain": "Quick Slash plus range (Mark of Pride) yields fast, consistent DPS."
+  },
+  {
+    "id": "q-char-15",
+    "category": "charms",
+    "difficulty": 1,
+    "question": "Which charm creates baby spiders to assist in combat?",
+    "choices": ["Weaversong", "Grubsong", "Dreamshield", "Sprintmaster"],
+    "answerIndex": 0,
+    "explain": "Weaversong summons little weavers that attack enemies."
+  },
+
+  {
+    "id": "q-item-07",
+    "category": "items",
+    "difficulty": 1,
+    "question": "Which item lets you wall-jump?",
+    "choices": ["Mothwing Cloak", "Crystal Heart", "Mantis Claw", "Monarch Wings"],
+    "answerIndex": 2,
+    "explain": "Mantis Claw grants wall-jump."
+  },
+  {
+    "id": "q-item-08",
+    "category": "items",
+    "difficulty": 1,
+    "question": "What allows you to dash horizontally?",
+    "choices": ["Monarch Wings", "Shade Cloak", "Mothwing Cloak", "Crystal Heart"],
+    "answerIndex": 2,
+    "explain": "Mothwing Cloak is the basic dash; Shade Cloak is its upgrade."
+  },
+  {
+    "id": "q-item-09",
+    "category": "items",
+    "difficulty": 1,
+    "question": "Which upgrade lets you dash through enemies?",
+    "choices": ["Shade Cloak", "Monarch Wings", "Lumafly Lantern", "City Crest"],
+    "answerIndex": 0,
+    "explain": "Shade Cloak lets you pass through hazards and enemies while dashing."
+  },
+  {
+    "id": "q-item-10",
+    "category": "items",
+    "difficulty": 2,
+    "question": "Which item opens the gate to City of Tears from Fungal Wastes?",
+    "choices": ["Simple Key", "City Crest", "Elegant Key", "Love Key"],
+    "answerIndex": 1,
+    "explain": "City Crest opens the gate at the Fungal Wastes elevator."
+  },
+  {
+    "id": "q-item-11",
+    "category": "items",
+    "difficulty": 2,
+    "question": "Which item powers lanterns to light dark areas?",
+    "choices": ["Rancid Egg", "Lumafly Lantern", "Simple Key", "Elegant Key"],
+    "answerIndex": 1,
+    "explain": "Lumafly Lantern illuminates dark caverns."
+  },
+  {
+    "id": "q-item-12",
+    "category": "items",
+    "difficulty": 2,
+    "question": "What unlocks the Soul Master’s spell upgrade room?",
+    "choices": ["Elegant Key", "Simple Key", "Love Key", "King’s Brand"],
+    "answerIndex": 0,
+    "explain": "Elegant Key opens a locked door in the Soul Sanctum."
+  },
+  {
+    "id": "q-item-13",
+    "category": "items",
+    "difficulty": 3,
+    "question": "Which item grants access to the Abyss?",
+    "choices": ["King’s Brand", "Tram Pass", "Elegant Key", "Simple Key"],
+    "answerIndex": 0,
+    "explain": "King’s Brand unlocks the Abyss door in Ancient Basin."
+  },
+  {
+    "id": "q-item-14",
+    "category": "items",
+    "difficulty": 3,
+    "question": "Where is the Tram Pass used first time by most players?",
+    "choices": ["Deepnest Station", "Resting Grounds", "Kingdom’s Edge", "Fog Canyon"],
+    "answerIndex": 0,
+    "explain": "Commonly, the first usable tram sits near Deepnest (failed tramway)."
+  },
+  {
+    "id": "q-item-15",
+    "category": "items",
+    "difficulty": 1,
+    "question": "Which upgrade allows double jump?",
+    "choices": ["Monarch Wings", "Mantis Claw", "Crystal Heart", "Shade Cloak"],
+    "answerIndex": 0,
+    "explain": "Monarch Wings grants a double jump."
   }
 ]

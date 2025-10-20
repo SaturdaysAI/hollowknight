@@ -22,7 +22,7 @@ export default function SearchBar() {
       <input
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        placeholder="Search bosses, charms, items…"
+        placeholder="Search bosses, variants, dreams, charms, items, map zones"
         autoComplete="off"
       />
       <button className="btn" type="submit">Search</button>

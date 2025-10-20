@@ -23,7 +23,7 @@ export default function WarriorDreamsPage() {
       <NavBar />
       <Gallery
         title="Warrior Dreams"
-        backTo={{ href: "/wiki", label: "← Back to Wiki" }}
+        backTo={{ href: "/wiki", label: "BACK TO WIKI" }}
         items={data as any[]}
         basePath="/wiki/warrior-dreams"
         assetsGlob={wdImages}
@@ -33,3 +33,4 @@ export default function WarriorDreamsPage() {
     </>
   );
 }
+

@@ -6,7 +6,8 @@ type Item = {
   title: string;
   img?: string;
   summary?: string;
-  difficulty?: number; // bosses sí, charms/items NO
+  difficulty?: number; // bosses (1..5)
+  notches?: number;    // charms: muescas
 };
 
 type Props = {
@@ -16,15 +17,27 @@ type Props = {
   basePath: string;
   assetsGlob: Record<string, string>;
   resolveBy?: "slug" | "filename";
-  showStars?: boolean; // ⬅️ nuevo (por defecto true)
+  showStars?: boolean;
 };
 
 function Stars({ n = 0 }: { n?: number }) {
   const safe = Math.max(0, Math.min(5, Number.isFinite(n as number) ? (n as number) : 0));
   return (
     <span className="gallery-stars" aria-label={`${safe} out of 5`} title={`${safe} / 5`}>
-      {"★".repeat(safe)}
-      {"☆".repeat(5 - safe)}
+      {"\u2605".repeat(safe)}
+      {"\u2606".repeat(5 - safe)}
+    </span>
+  );
+}
+
+function Notches({ n = 0 }: { n?: number }) {
+  const count = Math.max(0, Math.min(10, Number.isFinite(n as number) ? (n as number) : 0));
+  return (
+    <span className="notches" aria-label={`${count} notches`} title={`${count} notches`}>
+      {Array.from({ length: count }).map((_, i) => (
+        <span key={i} className="notch" />
+      ))}
+      {count === 0 && <span className="notch notch--zero">0</span>}
     </span>
   );
 }
@@ -71,6 +84,7 @@ export default function Gallery({
 
           const shouldShowStars =
             showStars && typeof it.difficulty === "number" && Number.isFinite(it.difficulty);
+          const shouldShowNotches = !showStars && typeof (it as any).notches === "number";
 
           return (
             <li key={it.slug} className="gallery-card">
@@ -83,12 +97,18 @@ export default function Gallery({
                   <figcaption className="gallery-caption">{it.title}</figcaption>
                 </figure>
 
-                {/* Solo estrellas si procede */}
+                {/* Estrellas (bosses) o muescas (charms) */}
                 {shouldShowStars && (
                   <div className="gallery-meta">
                     <Stars n={it.difficulty} />
                   </div>
                 )}
+                {!shouldShowStars && shouldShowNotches && (
+                  <div className="gallery-meta">
+                    <Notches n={(it as any).notches} />
+                  </div>
+                )}
+                {/* No extra text on cards — details are shown inside the entry */}
               </Link>
             </li>
           );
@@ -97,4 +117,3 @@ export default function Gallery({
     </main>
   );
 }
-

@@ -1,0 +1,92 @@
+﻿[
+    {
+        "summary":  "Barren, windswept cliffs at Hallownest\u0027s northwest edge.",
+        "title":  "Howling Cliffs",
+        "lore":  "Contains Joni\u0027s Repose (grave of Joni) and the Stag Nest; also where the Grimm Troupe\u0027s lantern appears.",
+        "slug":  "howling-cliffs"
+    },
+    {
+        "summary":  "Small, near-abandoned town that serves as the Knight\u0027s hub.",
+        "title":  "Dirtmouth",
+        "lore":  "Refuge for surviving NPCs and services (shops, bank) despite the kingdom\u0027s fall.",
+        "slug":  "dirtmouth"
+    },
+    {
+        "summary":  "Glittering mountain mine of hazardous crystal and conveyors.",
+        "title":  "Crystal Peak",
+        "lore":  "Prolonged exposure warped miners and machinery; holds important traversal upgrades.",
+        "slug":  "crystal-peak"
+    },
+    {
+        "summary":  "Lush caverns full of vegetation and acid pools.",
+        "title":  "Greenpath",
+        "lore":  "Home to Unn; first major encounters with Hornet.",
+        "slug":  "greenpath"
+    },
+    {
+        "summary":  "Central, ruined corridors linking much of the kingdom; the usual starting area.",
+        "title":  "Forgotten Crossroads",
+        "lore":  "After key story progress, becomes the Infected Crossroads with tougher enemies and changed layout.",
+        "slug":  "forgotten-crossroads"
+    },
+    {
+        "summary":  "Quiet necropolis of tombs and memorials east of the capital.",
+        "title":  "Resting Grounds",
+        "lore":  "Home of the Seer and the Dream Nail; includes the Dreamers\u0027 memorial and spirits\u0027 grove.",
+        "slug":  "resting-grounds"
+    },
+    {
+        "summary":  "Ornamental gardens of thorns and delicate platforms in the west.",
+        "title":  "Queen\u0027s Gardens",
+        "lore":  "Former domain of the White Lady; later seized by the Traitor Mantis tribe and site of the Traitor Lord.",
+        "slug":  "queens-gardens"
+    },
+    {
+        "summary":  "Acidic passages filled with pulsing jellyfish linking multiple biomes.",
+        "title":  "Fog Canyon",
+        "lore":  "The Teacher\u0027s Archives sit at its heart—Monomon the Teacher\u0027s domain and history.",
+        "slug":  "fog-canyon"
+    },
+    {
+        "summary":  "Spore-saturated caves populated by fungal beings.",
+        "title":  "Fungal Wastes",
+        "lore":  "Borders the Mantis Village and hides the cryptic Fungal Core.",
+        "slug":  "fungal-wastes"
+    },
+    {
+        "summary":  "Hallownest\u0027s rain-soaked capital beneath the Blue Lake.",
+        "title":  "City of Tears",
+        "lore":  "Seat of power for the Pale King\u0027s society; includes Soul Sanctum, Watcher\u0027s Spire, Pleasure House and King\u0027s Station.",
+        "slug":  "city-of-tears"
+    },
+    {
+        "summary":  "Far-eastern border where pale ash constantly falls into deep chasms.",
+        "title":  "Kingdom\u0027s Edge",
+        "lore":  "Hosts the Colosseum of Fools; near the cast-off shell of a Wyrm and key story beats with Hornet.",
+        "slug":  "kingdoms-edge"
+    },
+    {
+        "summary":  "Web-choked, lightless warrens teeming with aggressive arachnids.",
+        "title":  "Deepnest",
+        "lore":  "Territory of Herrah the Beast and the Weavers; includes the Beast\u0027s Den and a tram route.",
+        "slug":  "deepnest"
+    },
+    {
+        "summary":  "Flooded sewers beneath the City of Tears.",
+        "title":  "Royal Waterways",
+        "lore":  "Domain of the Dung Defender; route to Isma\u0027s Grove and a key to deeper progression.",
+        "slug":  "royal-waterways"
+    },
+    {
+        "summary":  "Honeycomb realm of sentient bees south of Kingdom\u0027s Edge.",
+        "title":  "The Hive",
+        "lore":  "Largely separate from Hallownest\u0027s affairs; rewards include the Hiveblood charm.",
+        "slug":  "the-hive"
+    },
+    {
+        "summary":  "Desolate depths below the Waterways with fossils and tram links.",
+        "title":  "Ancient Basin",
+        "lore":  "Once seat of the White Palace; connects to the Abyss and the Pale King\u0027s history.",
+        "slug":  "ancient-basin"
+    }
+]

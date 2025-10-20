@@ -4,6 +4,8 @@ import NavBar from "../../../components/NavBar";
 import Footer from "../../../components/Footer";
 import { Link } from "react-router-dom";
 import fondo6 from "../../../assets/fondo6.jpg";
+import brokenGif from "../../../assets/hollow-knight-broken-vessel-gif.gif";
+import victoryGif from "../../../assets/victory-gif.gif";
 
 type LastResult = {
   score: number;
@@ -47,14 +49,7 @@ export default function TriviaResults() {
   }, []);
 
   const percent = last ? Math.round((last.score / Math.max(1, last.total)) * 100) : 0;
-
-  const message = useMemo(() => {
-    if (!last) return "";
-    if (percent >= 90) return "Amazing! Hallownest bows to your knowledge.";
-    if (percent >= 70) return "Great! You're close to mastery.";
-    if (percent >= 50) return "Not bad! Keep exploring the wiki.";
-    return "A tough run. Review some entries and try again!";
-  }, [last, percent]);
+  const won = last ? last.score > last.total / 2 : false; // strictly more than half to win
 
   return (
     <>
@@ -90,12 +85,25 @@ export default function TriviaResults() {
             >
               {/* Score card */}
               <div className="info-card" style={{ background: "var(--btn-bg-2)", border: "1px solid var(--btn-border)", borderRadius: 12, padding: 14 }}>
-                <h3 className="section-title" style={{ marginTop: 0 }}>SCORE</h3>
-                <p style={{ margin: 0, fontSize: 22 }}>
-                  <strong>{last.score}</strong> / {last.total} &nbsp;
-                  <span className="detail-sub">({percent}%)</span>
-                </p>
-                <p className="detail-sub" style={{ marginTop: 6 }}>{message}</p>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, justifyContent: "space-between" }}>
+                  <div style={{ minWidth: 0, flex: 1 }}>
+                    <h3 className="section-title" style={{ marginTop: 0 }}>SCORE</h3>
+                    <p style={{ margin: 0, fontSize: 22 }}>
+                      <strong>{last.score}</strong> / {last.total} &nbsp;
+                      <span className="detail-sub">({percent}%)</span>
+                    </p>
+                    <p className="detail-sub" style={{ marginTop: 6 }}>
+                      {won
+                        ? "Well done, little ghost! Knowledge flows through you."
+                        : "Shattered shell, but the will persists. Return stronger."}
+                    </p>
+                  </div>
+                  <img
+                    src={won ? victoryGif : brokenGif}
+                    alt={won ? "Victory" : "Defeat"}
+                    style={{ width: 96, height: 96, objectFit: "contain", borderRadius: 8 }}
+                  />
+                </div>
               </div>
 
               {/* Filters card */}

@@ -1,3 +1,4 @@
+// src/App.tsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./features/wiki/pages/Home";
 import WikiIndex from "./features/wiki/pages/WikiIndex";
@@ -10,6 +11,7 @@ import WikiDetail from "./features/wiki/pages/WikiDetail";
 import TriviaStart from "./features/trivia/pages/TriviaStart";
 import TriviaResults from "./features/trivia/pages/TriviaResults";
 import NotFound from "./features/wiki/pages/NotFound";
+import MapPage from "./features/wiki/pages/MapPage";
 
 export default function App() {
   return (
@@ -27,7 +29,10 @@ export default function App() {
         <Route path="/wiki/items" element={<ItemsPage />} />
         <Route path="/wiki/:group/:slug" element={<WikiDetail />} />
 
-        {/* Trivia (todo el juego en /trivia) */}
+        {/* Mapa interactivo */}
+        <Route path="/wiki/map" element={<MapPage />} />
+
+        {/* Trivia */}
         <Route path="/trivia" element={<TriviaStart />} />
         <Route path="/trivia/results" element={<TriviaResults />} />
 

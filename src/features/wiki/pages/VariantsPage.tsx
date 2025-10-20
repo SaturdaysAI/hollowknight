@@ -23,7 +23,7 @@ export default function VariantsPage() {
       <NavBar />
       <Gallery
         title="Boss Variants"
-        backTo={{ href: "/wiki", label: "← Back to Wiki" }}
+        backTo={{ href: "/wiki", label: "BACK TO WIKI" }}
         items={data as any[]}
         basePath="/wiki/variants"
         assetsGlob={variantImages}
@@ -33,3 +33,4 @@ export default function VariantsPage() {
     </>
   );
 }
+

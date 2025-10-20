@@ -23,7 +23,7 @@ export default function BossesPage() {
       <NavBar />
       <Gallery
         title="Bosses"
-        backTo={{ href: "/wiki", label: "← Back to Wiki" }}
+        backTo={{ href: "/wiki", label: "BACK TO WIKI" }}
         items={data as any[]}
         basePath="/wiki/bosses"
         assetsGlob={bossImages}
@@ -33,3 +33,4 @@ export default function BossesPage() {
     </>
   );
 }
+

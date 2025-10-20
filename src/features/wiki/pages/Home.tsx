@@ -1,8 +1,8 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import NavBar from "../../../components/NavBar";
 import Footer from "../../../components/Footer";
 import { Link } from "react-router-dom";
-import fondo1 from "../../../assets/fondo1.jpg";
+import hkVideo from "../../../assets/hollow-knight-wallpaper.mp4";
 import logo from "../../../assets/logo.png";
 import SearchBar from "../../../components/SearchBar";
 import icon1 from "../../../assets/icon1.jpg";
@@ -15,28 +15,36 @@ export default function Home() {
   }, []);
 
   const bgStyle: React.CSSProperties = {
-    backgroundImage: `url(${fondo1})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
+    position: "relative",
     flex: 1,
     display: "flex",
     alignItems: "flex-start",
     backgroundColor: "var(--footer-bg)",
+    overflow: "hidden",
   };
 
   return (
     <>
       <NavBar />
       <main style={bgStyle}>
+        {/* Video de fondo animado */}
+        <video
+          className="home-bg-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        >
+          <source src={hkVideo} type="video/mp4" />
+        </video>
         <div className="container-left">
           <div className="hero">
             <img src={logo} alt="Hollow Knight" className="hero-logo" loading="eager" />
 
             <p className="hero-text">
-              Fan-made Hollow Knight wiki + trivia. Quick guides to areas, bosses, charms, lore,
-              and spoiler-tagged endings — then put your knowledge to the test.
+              Fan-made Hollow Knight wiki + trivia. Explore areas, bosses, charms, items, variants and warrior dreams.
+              Interactive world map, summaries, acquisition notes and lore — then put your knowledge to the test.
             </p>
             <img
               src={icon1}

@@ -11,20 +11,47 @@ import charms from "../../../content/wiki/charms.json";
 import items from "../../../content/wiki/items.json";
 import wikiBg from "../../../assets/wiki-bg.jpg";
 
-// Carga de imágenes por grupo (solo las que vamos a buscar)
-const imgsBosses  = import.meta.glob("../../../assets/bosses/*", { eager: true, as: "url" }) as Record<string,string>;
-const imgsCharms  = import.meta.glob("../../../assets/charms/*", { eager: true, as: "url" }) as Record<string,string>;
-const imgsItems   = import.meta.glob("../../../assets/items/*",  { eager: true, as: "url" }) as Record<string,string>;
+// Carga de imágenes por grupo (solo las necesarias para las tarjetas)
+const imgsBosses   = import.meta.glob("../../../assets/bosses/*", { eager: true, as: "url" }) as Record<string,string>;
+const imgsCharms   = import.meta.glob("../../../assets/charms/*", { eager: true, as: "url" }) as Record<string,string>;
+const imgsItems    = import.meta.glob("../../../assets/items/*",  { eager: true, as: "url" }) as Record<string,string>;
+const imgsVariants = import.meta.glob("../../../assets/variants/*",  { eager: true, as: "url" }) as Record<string,string>;
+const imgsDreams   = import.meta.glob("../../../assets/warrior-dreams/*",  { eager: true, as: "url" }) as Record<string,string>;
+const imgsZones    = import.meta.glob("../../../assets/areas/*",  { eager: true, as: "url" }) as Record<string,string>;
 
 type Item = { slug: string; title: string; summary?: string; difficulty?: number };
 
-// qué grupos incluye la búsqueda
-const SEARCH_GROUPS: Array<"bosses"|"charms"|"items"> = ["bosses","charms","items"];
+// Grupos incluidos en la búsqueda
+const SEARCH_GROUPS: Array<"bosses"|"charms"|"items"|"variants"|"warrior-dreams"|"zones"> = [
+  "bosses","charms","items","variants","warrior-dreams","zones"
+];
+
+// Zonas del mapa (solo slug/title para búsqueda)
+const zones: Item[] = [
+  { slug: "howling-cliffs", title: "Howling Cliffs" },
+  { slug: "dirtmouth", title: "Dirtmouth" },
+  { slug: "crystal-peak", title: "Crystal Peak" },
+  { slug: "greenpath", title: "Greenpath" },
+  { slug: "forgotten-crossroads", title: "Forgotten Crossroads" },
+  { slug: "resting-grounds", title: "Resting Grounds" },
+  { slug: "queens-gardens", title: "Queen's Gardens" },
+  { slug: "fog-canyon", title: "Fog Canyon" },
+  { slug: "fungal-wastes", title: "Fungal Wastes" },
+  { slug: "city-of-tears", title: "City of Tears" },
+  { slug: "kingdoms-edge", title: "Kingdom's Edge" },
+  { slug: "deepnest", title: "Deepnest" },
+  { slug: "royal-waterways", title: "Royal Waterways" },
+  { slug: "the-hive", title: "The Hive" },
+  { slug: "ancient-basin", title: "Ancient Basin" },
+];
 
 const DATA: Record<string, { label: string; items: Item[]; imgs: Record<string,string>; back: string }> = {
   bosses: { label: "Bosses", items: bosses as Item[], imgs: imgsBosses, back: "/wiki/bosses" },
   charms: { label: "Charms", items: charms as Item[], imgs: imgsCharms, back: "/wiki/charms" },
   items:  { label: "Items",  items: items as Item[],  imgs: imgsItems,  back: "/wiki/items"  },
+  variants: { label: "Boss Variants", items: variants as Item[], imgs: imgsVariants, back: "/wiki/variants" },
+  "warrior-dreams": { label: "Warrior Dreams", items: dreams as Item[], imgs: imgsDreams, back: "/wiki/warrior-dreams" },
+  zones: { label: "World Map", items: zones, imgs: imgsZones, back: "/wiki/map" },
 };
 
 // normaliza texto (ignora acentos/mayúsculas)
@@ -32,20 +59,24 @@ function norm(s = "") {
   return s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
 }
 
-// imagen por grupo/slug (busca .jpg/.png/.webp)
+// devuelve url de imagen por slug (acepta .jpg/.png/.webp)
 function getImageUrl(imgMap: Record<string,string>, slug: string) {
   const e = Object.entries(imgMap).find(([p]) =>
-    p.endsWith(`/${slug}.jpg`) || p.endsWith(`/${slug}.png`) || p.endsWith(`/${slug}.webp`)
+    p.endsWith(`/${slug}.webp`) ||
+    p.endsWith(`/${slug}.jpg`)  ||
+    p.endsWith(`/${slug}.png`)  ||
+    p.endsWith(`/${slug}.svg`)
   );
   return e?.[1] ?? "";
 }
 
-// Tarjeta reutilizable (misma estética de la galería)
+// Tarjeta de resultado reutilizable
 function ResultCard({ group, item }: { group: keyof typeof DATA; item: Item }) {
   const imgUrl = getImageUrl(DATA[group].imgs, item.slug);
+  const href = group === 'zones' ? `/wiki/map?center=${encodeURIComponent(item.slug)}` : `/wiki/${group}/${item.slug}`;
   return (
     <li className="gallery-card">
-      <Link to={`/wiki/${group}/${item.slug}`} className="gallery-link">
+      <Link to={href} className="gallery-link">
         <figure
           className="gallery-figure"
           style={{ backgroundImage: imgUrl ? `url(${imgUrl})` : undefined }}
@@ -53,7 +84,6 @@ function ResultCard({ group, item }: { group: keyof typeof DATA; item: Item }) {
           {!imgUrl && <div className="gallery-fallback">No image</div>}
           <figcaption className="gallery-caption">{item.title}</figcaption>
         </figure>
-        {/* Muestra estrellas SOLO en bosses si quieres */}
         {group === "bosses" && typeof item.difficulty === "number" && (
           <div className="gallery-meta">
             <span className="gallery-stars">
@@ -70,7 +100,7 @@ export default function WikiIndex() {
   const [sp] = useSearchParams();
   const q = (sp.get("search") ?? "").trim();
 
-  // === BUSCADOR ===
+  // ==== BUSCADOR ====
   const results = (() => {
     if (!q) return [];
     const nq = norm(q);
@@ -78,7 +108,10 @@ export default function WikiIndex() {
     for (const g of SEARCH_GROUPS) {
       const block = DATA[g];
       for (const it of block.items) {
-        const hay = norm(it.title).includes(nq) || norm(it.summary ?? "").includes(nq) || norm(it.slug).includes(nq);
+        const hay =
+          norm(it.title).includes(nq) ||
+          norm(it.summary ?? "").includes(nq) ||
+          norm(it.slug).includes(nq);
         if (hay) out.push({ group: g, item: it });
       }
     }
@@ -87,7 +120,7 @@ export default function WikiIndex() {
 
   const hasQuery = q.length > 0;
 
-  // Solo establece el fondo global leyendo wikiBg, sin tocar el JSX ni estilos existentes
+  // Fondo de la página (respeta tu sistema de variables)
   useEffect(() => {
     const el = document.getElementById("root") || document.documentElement;
     const prev = el.style.getPropertyValue("--page-bg");
@@ -102,12 +135,13 @@ export default function WikiIndex() {
     <>
       <NavBar />
       <main className="container page-wiki">
-
-        {/* === BLOQUE DE RESULTADOS === */}
+        {/* ==== RESULTADOS DE BÚSQUEDA ==== */}
         {hasQuery && (
           <>
             <h1 className="wiki-group-title">SEARCH</h1>
-            <p className="wiki-group-sub">Results for “{q}” — {results.length} {results.length === 1 ? "match" : "matches"}</p>
+            <p className="wiki-group-sub">
+              Results for “{q}” — {results.length} {results.length === 1 ? "match" : "matches"}
+            </p>
 
             {results.length === 0 ? (
               <p style={{ marginTop: 8, color: "var(--text-subtle)" }}>
@@ -120,8 +154,6 @@ export default function WikiIndex() {
                 ))}
               </ul>
             )}
-
-            {/* separador visual antes del índice normal */}
             <hr className="section-divider" />
           </>
         )}
@@ -129,8 +161,7 @@ export default function WikiIndex() {
         {/* ====== COMBAT ====== */}
         <h1 className="wiki-group-title">COMBAT</h1>
         <p className="wiki-group-sub">
-          Choose a section to browse. Each section opens an image gallery where every card
-          links to a detailed page.
+          Choose a section to browse. Each section opens an image gallery where every card links to a detailed page.
         </p>
 
         <section className="wiki-sections">
@@ -185,6 +216,23 @@ export default function WikiIndex() {
             </div>
             <p className="wiki-section-desc">Key things you can obtain: maps, upgrades, quest items…</p>
             <Link to="/wiki/items" className="btn secondary">Open Items</Link>
+          </article>
+        </section>
+
+        {/* ====== WORLD / INTERACTIVE MAP ====== */}
+        <h2 className="wiki-group-title" style={{ marginTop: 28 }}>WORLD</h2>
+        <p className="wiki-group-sub">
+          Explore Hallownest with an interactive map. Pan, zoom and locate areas, bosses and more.
+        </p>
+
+        <section className="wiki-sections">
+          <article className="wiki-section-card">
+            <div className="wiki-section-head">
+              <h3 className="wiki-section-title">Interactive Map</h3>
+              <span className="wiki-section-count">1 tool</span>
+            </div>
+            <p className="wiki-section-desc">Navigate the world with markers and filters.</p>
+            <Link to="/wiki/map" className="btn secondary">Open Map</Link>
           </article>
         </section>
 
